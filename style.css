@@ -521,8 +521,8 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
   left: 10%;
   right: 10%;
   height: 2px;
-  background: linear-gradient(90deg, transparent, var(--color-gold-light), transparent);
-  opacity: 0.3;
+  background: linear-gradient(90deg, transparent, var(--color-dark-green), transparent);
+  opacity: 0.2;
 }
 
 .step {
@@ -553,14 +553,14 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 
 .step-title {
   font-weight: 600;
-  color: var(--color-cream);
+  color: var(--color-dark-green);
   margin-bottom: 8px;
   font-size: 0.95rem;
 }
 
 .step-desc {
   font-size: 0.82rem;
-  color: rgba(240,234,214,0.55);
+  color: rgba(15,31,23,0.6);
   line-height: 1.5;
   max-width: 180px;
 }
