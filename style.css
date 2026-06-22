@@ -133,8 +133,8 @@ p { max-width: 680px; }
 /* ─── LOGO SVG ────────────────────────────────────────────── */
 .logo-wrap { display: flex; align-items: center; gap: 14px; }
 .logo-svg { width: 48px; height: 48px; flex-shrink: 0; }
-.logo-text { font-family: var(--font-serif); font-size: 1.25rem; font-weight: 700; color: var(--color-cream); }
-.logo-text span { color: var(--color-gold); }
+.logo-text { font-family: var(--font-sans); font-size: 1.1rem; font-weight: 600; color: var(--color-cream); letter-spacing: 0.02em; }
+.logo-text span { color: var(--color-cream); }
 
 /* ─── NAV ─────────────────────────────────────────────────── */
 nav {
