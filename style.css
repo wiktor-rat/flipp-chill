@@ -952,7 +952,7 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 }
 
 .faq-item {
-  border: 1px solid rgba(27,58,42,0.15);
+  border: 1px solid rgba(255,255,255,0.12);
   border-radius: var(--radius-md);
   overflow: hidden;
 }
@@ -966,7 +966,7 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
   font-family: var(--font-sans);
   font-size: 0.95rem;
   font-weight: 600;
-  color: var(--color-dark-green);
+  color: var(--color-cream);
   cursor: pointer;
   display: flex;
   justify-content: space-between;
@@ -974,7 +974,7 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
   gap: 16px;
   transition: var(--transition);
 }
-.faq-q:hover { background: rgba(27,58,42,0.04); }
+.faq-q:hover { background: rgba(255,255,255,0.05); }
 
 .faq-q .faq-icon {
   font-size: 1.2rem;
@@ -999,7 +999,7 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 
 .faq-a p {
   font-size: 0.9rem;
-  color: rgba(15,31,23,0.65);
+  color: rgba(240,234,214,0.65);
   line-height: 1.7;
   max-width: none;
 }
