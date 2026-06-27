@@ -638,7 +638,8 @@ input[type="range"]::-webkit-slider-thumb:hover { transform: scale(1.15); }
 
 .compare-item .icon { flex-shrink: 0; font-size: 1rem; margin-top: 2px; }
 
-.compare-col.them .compare-item { color: rgba(15,31,23,0.6); }
+.compare-col.them .compare-item { color: rgba(240,234,214,0.45); }
+.compare-col.them .compare-item .icon { color: rgba(240,234,214,0.35); }
 .compare-col.us   .compare-item { color: rgba(240,234,214,0.85); }
 
 /* ─── CASE STUDIES ────────────────────────────────────────── */
