@@ -75,13 +75,6 @@ document.addEventListener('DOMContentLoaded', function () {
     resultRange.textContent = 'od ' + formatPLN(low) + ' do ' + formatPLN(high);
     resultBox.classList.add('visible');
 
-    // Prefill formularza kwotą z kalkulatora
-    var prefillInput = document.getElementById('field-value');
-    if (prefillInput) {
-      prefillInput.value = formatPLN(val * 1000);
-      prefillInput.closest('.form-group').classList.add('prefilled');
-    }
-
     // Pixel event — tylko raz
     if (!calcTracked) {
       if (window.fbq) fbq('trackCustom', 'CalculatorUsed', { value: val * 1000 });
