@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* ── KONFIGURACJA — podmień przed wdrożeniem ─────────────── */
-const LEAD_WEBHOOK_URL = "TUTAJ_WSTAW_WEBHOOK_GHL"; // np. https://services.leadconnectorhq.com/hooks/...
+const LEAD_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19282604/42p4kqi/"; // np. https://services.leadconnectorhq.com/hooks/...
 
 /* ── DOM READY ────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function () {
