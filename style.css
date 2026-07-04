@@ -1239,6 +1239,8 @@ footer {
   .sticky-bar { display: flex; }
   body { padding-bottom: 72px; }
   .nav-phone { display: none; }
+  .nav-cta-group .btn { display: none; }
+  .nav-cta-group { gap: 8px; }
 }
 
 @media (max-width: 380px) {
