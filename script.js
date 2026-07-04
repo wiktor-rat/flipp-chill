@@ -468,13 +468,12 @@ document.addEventListener('DOMContentLoaded', function () {
       if (formError) formError.classList.remove('visible');
 
       try {
-        var response = await fetch(LEAD_WEBHOOK_URL, {
+        await fetch(LEAD_WEBHOOK_URL, {
           method:  'POST',
+          mode:    'no-cors',
           headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
           body:    new URLSearchParams(data).toString(),
         });
-
-        if (!response.ok) throw new Error('HTTP ' + response.status);
 
         if (window.fbq) fbq('track', 'Lead');
         if (formCard)    formCard.style.display    = 'none';
