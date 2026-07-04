@@ -154,6 +154,8 @@ var translations = {
     'footer.company': 'Dane spółki',
     'footer.copyright': '© 2024 Samuel Sp. z o.o. · Wszelkie prawa zastrzeżone.',
     'footer.privacy': 'Polityka prywatności',
+    'sb.call': 'Zadzwoń',
+    'sb.form': 'Wyceń mieszkanie',
   },
 
   en: {
@@ -301,6 +303,8 @@ var translations = {
     'footer.company': 'Company Details',
     'footer.copyright': '© 2024 Samuel Sp. z o.o. · All rights reserved.',
     'footer.privacy': 'Privacy Policy',
+    'sb.call': 'Call us',
+    'sb.form': 'Value my property',
   }
 };
 
