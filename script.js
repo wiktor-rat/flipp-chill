@@ -470,8 +470,8 @@ document.addEventListener('DOMContentLoaded', function () {
       try {
         var response = await fetch(LEAD_WEBHOOK_URL, {
           method:  'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body:    JSON.stringify(data),
+          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+          body:    new URLSearchParams(data).toString(),
         });
 
         if (!response.ok) throw new Error('HTTP ' + response.status);
