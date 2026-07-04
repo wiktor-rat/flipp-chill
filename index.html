@@ -60,8 +60,13 @@
         </svg>
         <strong>+48 792 432 203</strong>
       </a>
+      <div class="lang-switcher" aria-label="Zmień język">
+        <button class="lang-btn active" data-lang="pl" aria-label="Polski">PL</button>
+        <span class="lang-sep" aria-hidden="true">|</span>
+        <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+      </div>
       <a href="#form-section" class="btn btn-primary" style="padding: 12px 22px; font-size: 0.85rem;">
-        Bezpłatna wycena
+        <span data-i18n="nav.cta">Bezpłatna wycena</span>
       </a>
     </div>
 
@@ -80,15 +85,15 @@
       <div class="hero-content">
         <div class="hero-badge">
           <span class="dot"></span>
-          Najskuteczniejsze biuro nieruchomości w Warszawie
+          <span data-i18n="hero.badge">Najskuteczniejsze biuro nieruchomości w Warszawie</span>
         </div>
 
         <h1 class="hero-title">
-          Sprzedaj swoją&nbsp;nieruchomość
-          <em>drożej, niż&nbsp;myślisz.</em>
+          <span data-i18n="hero.h1">Sprzedaj swoją&nbsp;nieruchomość</span>
+          <em data-i18n="hero.h1em">drożej, niż&nbsp;myślisz.</em>
         </h1>
 
-        <p class="hero-sub">
+        <p class="hero-sub" data-i18n-html="hero.sub">
           Regularnie uzyskujemy dla naszych klientów oferty
           <strong style="color: var(--color-gold-light);">średnio o 50&nbsp;000 zł wyższe</strong>
           niż osiągnęliby samodzielnie. To nie wyjątek — to nasz standard.
@@ -99,28 +104,28 @@
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
-            Sprawdź wartość mieszkania
+            <span data-i18n="hero.cta1">Sprawdź wartość mieszkania</span>
           </a>
           <a href="tel:+48792432203" class="btn btn-outline">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24 11.47 11.47 0 003.59.57 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.47 11.47 0 00.57 3.59 1 1 0 01-.25 1.01l-2.2 2.2z" fill="currentColor"/>
             </svg>
-            Zadzwoń: <strong>792&nbsp;432&nbsp;203</strong>
+            <span data-i18n="hero.cta2prefix">Zadzwoń: </span><strong>792&nbsp;432&nbsp;203</strong>
           </a>
         </div>
 
         <div class="hero-trust">
           <div class="trust-item">
             <span class="check">✓</span>
-            8 lat doświadczenia
+            <span data-i18n="hero.trust1">8 lat doświadczenia</span>
           </div>
           <div class="trust-item">
             <span class="check">✓</span>
-            Prowizja dopiero po sprzedaży
+            <span data-i18n="hero.trust2">Prowizja dopiero po sprzedaży</span>
           </div>
           <div class="trust-item">
             <span class="check">✓</span>
-            Pierwsze oferty w 2–3 tygodnie
+            <span data-i18n="hero.trust3">Pierwsze oferty w 2–3 tygodnie</span>
           </div>
         </div>
       </div>
@@ -129,26 +134,26 @@
       <div class="hero-visual" aria-hidden="true">
         <div class="hero-stat-card">
           <div class="stat-number">+50 tys.</div>
-          <div class="stat-label">Tyle więcej uzyskujemy dla klientów<br>w stosunku do samodzielnej sprzedaży</div>
+          <div class="stat-label" data-i18n-html="stats.label">Tyle więcej uzyskujemy dla klientów<br>w stosunku do samodzielnej sprzedaży</div>
 
           <div class="stat-divider"></div>
 
           <div class="mini-stats">
             <div>
               <div class="mini-stat-value">7–11%</div>
-              <div class="mini-stat-label">Powyżej ceny rynkowej</div>
+              <div class="mini-stat-label" data-i18n="stats.mini1">Powyżej ceny rynkowej</div>
             </div>
             <div>
               <div class="mini-stat-value">1–2 mies.</div>
-              <div class="mini-stat-label">Średni czas sprzedaży</div>
+              <div class="mini-stat-label" data-i18n="stats.mini2">Średni czas sprzedaży</div>
             </div>
             <div>
               <div class="mini-stat-value">8 lat</div>
-              <div class="mini-stat-label">Na rynku nieruchomości</div>
+              <div class="mini-stat-label" data-i18n="stats.mini3">Na rynku nieruchomości</div>
             </div>
             <div>
               <div class="mini-stat-value">A–Z</div>
-              <div class="mini-stat-label">Kompleksowa obsługa</div>
+              <div class="mini-stat-label" data-i18n="stats.mini4">Kompleksowa obsługa</div>
             </div>
           </div>
         </div>
@@ -167,49 +172,49 @@
     <div class="problem-grid">
 
       <div>
-        <span class="eyebrow" style="color: var(--color-dark-green);">Znasz to uczucie?</span>
-        <h2>Sprzedaż nieruchomości nie powinna być tak trudna.</h2>
+        <span class="eyebrow" style="color: var(--color-dark-green);" data-i18n="problem.eyebrow">Znasz to uczucie?</span>
+        <h2 data-i18n="problem.h2">Sprzedaż nieruchomości nie powinna być tak trudna.</h2>
 
         <div class="problem-items">
           <div class="problem-item">
             <div class="problem-icon">⏳</div>
             <div class="problem-item-text">
-              <h4>Ogłoszenie wisi tygodniami</h4>
-              <p>Mało zapytań, brak realnych zainteresowanych — cisza, która kosztuje czas i nerwy.</p>
+              <h4 data-i18n="problem.p1h">Ogłoszenie wisi tygodniami</h4>
+              <p data-i18n="problem.p1t">Mało zapytań, brak realnych zainteresowanych — cisza, która kosztuje czas i nerwy.</p>
             </div>
           </div>
           <div class="problem-item">
             <div class="problem-icon">💸</div>
             <div class="problem-item-text">
-              <h4>Presja zejścia z ceny</h4>
-              <p>Im dłużej mieszkanie nie sprzedane, tym silniejsza pokusa obniżania — i tym więcej tracisz.</p>
+              <h4 data-i18n="problem.p2h">Presja zejścia z ceny</h4>
+              <p data-i18n="problem.p2t">Im dłużej mieszkanie nie sprzedane, tym silniejsza pokusa obniżania — i tym więcej tracisz.</p>
             </div>
           </div>
           <div class="problem-item">
             <div class="problem-icon">🤷</div>
             <div class="problem-item-text">
-              <h4>Nie wiesz, czy trafiłeś na realnego kupca</h4>
-              <p>Zapytania są, ale mało konkretne. Trudno odróżnić poważnego kupca od "okienka".</p>
+              <h4 data-i18n="problem.p3h">Nie wiesz, czy trafiłeś na realnego kupca</h4>
+              <p data-i18n="problem.p3t">Zapytania są, ale mało konkretne. Trudno odróżnić poważnego kupca od "okienka".</p>
             </div>
           </div>
           <div class="problem-item">
             <div class="problem-icon">📋</div>
             <div class="problem-item-text">
-              <h4>Biuro wrzuciło ogłoszenie i znikło</h4>
-              <p>Prowizja była, ale pracy — mało. Jesteś pozostawiony sam sobie w procesie sprzedaży.</p>
+              <h4 data-i18n="problem.p4h">Biuro wrzuciło ogłoszenie i znikło</h4>
+              <p data-i18n="problem.p4t">Prowizja była, ale pracy — mało. Jesteś pozostawiony sam sobie w procesie sprzedaży.</p>
             </div>
           </div>
         </div>
       </div>
 
       <div class="problem-cta-box">
-        <h3>Nie musisz sprzedawać w takich warunkach.</h3>
-        <p>Mamy gotowych, zdecydowanych kupujących i aktywnie dowozimy oferty — zamiast czekać przy ogłoszeniu.</p>
+        <h3 data-i18n="problem.cta.h3">Nie musisz sprzedawać w takich warunkach.</h3>
+        <p data-i18n="problem.cta.p">Mamy gotowych, zdecydowanych kupujących i aktywnie dowozimy oferty — zamiast czekać przy ogłoszeniu.</p>
         <a href="#form-section" class="btn btn-primary">
-          Chcę lepszej oferty
+          <span data-i18n="problem.cta.btn">Chcę lepszej oferty</span>
         </a>
         <div style="margin-top: 20px; font-size: 0.8rem; color: rgba(240,234,214,0.5);">
-          Bezpłatna konsultacja · Bez zobowiązań
+          <span data-i18n="problem.cta.note">Bezpłatna konsultacja · Bez zobowiązań</span>
         </div>
       </div>
 
@@ -226,14 +231,14 @@
 
     <div class="calculator-card">
       <div class="calc-header">
-        <span class="eyebrow" style="color: var(--color-gold); opacity: 1;">Kalkulator zysku</span>
-        <h2>Ile więcej zyskasz<br>sprzedając z nami?</h2>
-        <p>Przesuń suwak, żeby zobaczyć ile możesz zyskać przy sprzedaży z Flipp&amp;Chill.</p>
+        <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="calc.eyebrow">Kalkulator zysku</span>
+        <h2 data-i18n-html="calc.h2">Ile więcej zyskasz<br>sprzedając z nami?</h2>
+        <p data-i18n="calc.p">Przesuń suwak, żeby zobaczyć ile możesz zyskać przy sprzedaży z Flipp&amp;Chill.</p>
       </div>
 
       <div class="calc-input-group">
         <div class="calc-label">
-          <span>Orientacyjna wartość Twojego mieszkania</span>
+          <span data-i18n="calc.label">Orientacyjna wartość Twojego mieszkania</span>
           <span class="calc-value-display" id="calc-value-display">500 000 zł</span>
         </div>
         <input
@@ -251,19 +256,18 @@
         </div>
       </div>
 
-      <!-- Wynik kalkulatora — pojawia się od razu po interakcji -->
       <div class="calc-result visible" id="calc-result" role="status" aria-live="polite">
-        <div class="calc-result-label">Z Flipp&amp;Chill możesz uzyskać dodatkowo</div>
+        <div class="calc-result-label" data-i18n="calc.result.label">Z Flipp&amp;Chill możesz uzyskać dodatkowo</div>
         <div class="calc-result-range" id="calc-result-range">od 35 000 zł do 55 000 zł</div>
-        <div class="calc-result-note">Szacunek oparty na realnych wynikach naszych transakcji (+7–11%)</div>
+        <div class="calc-result-note" data-i18n="calc.result.note">Szacunek oparty na realnych wynikach naszych transakcji (+7–11%)</div>
       </div>
 
       <div class="calc-cta">
-        <p style="color: rgba(240,234,214,0.65); font-size: 0.9rem; margin: 0 auto 20px; text-align: center;">
+        <p style="color: rgba(240,234,214,0.65); font-size: 0.9rem; margin: 0 auto 20px; text-align: center;" data-i18n="calc.cta.p">
           Chcesz potwierdzić tę kwotę z agentem i ustalić plan działania?
         </p>
         <button id="calc-cta-btn" class="btn btn-primary" style="margin: 0 auto; display: flex;">
-          Sprawdź to z agentem →
+          <span data-i18n="calc.cta.btn">Sprawdź to z agentem →</span>
         </button>
       </div>
     </div>
@@ -277,38 +281,38 @@
      ════════════════════════════════════════════════════════════ -->
 <section id="process" class="section-cream fade-up">
   <div class="container text-center">
-    <span class="eyebrow" style="color: var(--color-dark-green);">Jak to działa</span>
-    <h2>Przejmujemy cały proces.<br>Ty robisz minimum.</h2>
+    <span class="eyebrow" style="color: var(--color-dark-green);" data-i18n="process.eyebrow">Jak to działa</span>
+    <h2 data-i18n-html="process.h2">Przejmujemy cały proces.<br>Ty robisz minimum.</h2>
 
     <div class="process-steps">
 
       <div class="step">
         <div class="step-number">1</div>
-        <div class="step-title">Bezpłatna wycena</div>
-        <div class="step-desc">Oceniamy realną wartość rynkową i omawiamy strategię sprzedaży.</div>
+        <div class="step-title" data-i18n="process.s1title">Bezpłatna wycena</div>
+        <div class="step-desc" data-i18n="process.s1desc">Oceniamy realną wartość rynkową i omawiamy strategię sprzedaży.</div>
       </div>
 
       <div class="step">
         <div class="step-number">2</div>
-        <div class="step-title">Przygotowanie i marketing</div>
-        <div class="step-desc">Homestaging, profesjonalne zdjęcia, kampania — Twoje mieszkanie błyszczy.</div>
+        <div class="step-title" data-i18n="process.s2title">Przygotowanie i marketing</div>
+        <div class="step-desc" data-i18n="process.s2desc">Homestaging, profesjonalne zdjęcia, kampania — Twoje mieszkanie błyszczy.</div>
       </div>
 
       <div class="step">
         <div class="step-number">3</div>
-        <div class="step-title">Aktywne dotarcie do kupujących</div>
-        <div class="step-desc">Baza zdecydowanych kupujących + kontakt z każdym agentem na rynku. Pierwsze oferty po 2–3 tygodniach.</div>
+        <div class="step-title" data-i18n="process.s3title">Aktywne dotarcie do kupujących</div>
+        <div class="step-desc" data-i18n="process.s3desc">Baza zdecydowanych kupujących + kontakt z każdym agentem na rynku. Pierwsze oferty po 2–3 tygodniach.</div>
       </div>
 
       <div class="step">
         <div class="step-number">4</div>
-        <div class="step-title">Negocjacje i finalizacja</div>
-        <div class="step-desc">Prowadzimy kupujących, negocjujemy cenę, wspieramy kredytowo i notarialnie aż po przekazanie kluczy.</div>
+        <div class="step-title" data-i18n="process.s4title">Negocjacje i finalizacja</div>
+        <div class="step-desc" data-i18n="process.s4desc">Prowadzimy kupujących, negocjujemy cenę, wspieramy kredytowo i notarialnie aż po przekazanie kluczy.</div>
       </div>
 
     </div>
 
-    <div class="process-footer-note" style="margin-top: 48px;">
+    <div class="process-footer-note" style="margin-top: 48px;" data-i18n-html="process.footer">
       <strong>Umowa na maksymalnie 3 miesiące</strong> (z możliwością 1 przedłużenia) — każda oferta dostaje maksimum energii i budżetu.
       Wynagrodzenie dopiero przy faktycznej sprzedaży — nie ponosisz ryzyka.
     </div>
@@ -321,29 +325,29 @@
      ════════════════════════════════════════════════════════════ -->
 <section id="why-us" class="section-dark fade-up">
   <div class="container text-center">
-    <span class="eyebrow" style="color: var(--color-gold); opacity: 1;">Dlaczego Flipp&amp;Chill</span>
-    <h2 style="color: var(--color-cream);">Nie każde biuro dowozi wyniki.</h2>
-    <p style="color: rgba(240,234,214,0.65); margin: 16px auto 0;">Różnica jest w tym, jak aktywnie pracujemy na Twoją sprzedaż.</p>
+    <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="whyus.eyebrow">Dlaczego Flipp&amp;Chill</span>
+    <h2 style="color: var(--color-cream);" data-i18n="whyus.h2">Nie każde biuro dowozi wyniki.</h2>
+    <p style="color: rgba(240,234,214,0.65); margin: 16px auto 0;" data-i18n="whyus.p">Różnica jest w tym, jak aktywnie pracujemy na Twoją sprzedaż.</p>
 
     <div class="comparison-grid">
 
       <!-- INNI -->
       <div class="compare-col them" style="background: rgba(0,0,0,0.2); color: var(--color-cream);">
         <div class="compare-header" style="border-color: rgba(255,255,255,0.1); color: rgba(240,234,214,0.5);">
-          <span>✕</span> Inne biura nieruchomości
+          <span>✕</span> <span data-i18n="whyus.them.header">Inne biura nieruchomości</span>
         </div>
         <div class="compare-items">
           <div class="compare-item">
             <span class="icon" style="opacity:0.5">✕</span>
-            <span style="color: rgba(240,234,214,0.5);">Wystawiają ogłoszenie na portalu i czekają — bez aktywnego generowania kupujących.</span>
+            <span style="color: rgba(240,234,214,0.5);" data-i18n="whyus.them.i1">Wystawiają ogłoszenie na portalu i czekają — bez aktywnego generowania kupujących.</span>
           </div>
           <div class="compare-item">
             <span class="icon" style="opacity:0.5">✕</span>
-            <span style="color: rgba(240,234,214,0.5);">Brak specjalizacji w konkretnym segmencie → brak dopasowanej bazy kupujących pod Twoje mieszkanie.</span>
+            <span style="color: rgba(240,234,214,0.5);" data-i18n="whyus.them.i2">Brak specjalizacji w konkretnym segmencie → brak dopasowanej bazy kupujących pod Twoje mieszkanie.</span>
           </div>
           <div class="compare-item">
             <span class="icon" style="opacity:0.5">✕</span>
-            <span style="color: rgba(240,234,214,0.5);">Słaba komunikacja — nie wiesz co się dzieje, proces się rozmywa, mijają tygodnie bez efektów.</span>
+            <span style="color: rgba(240,234,214,0.5);" data-i18n="whyus.them.i3">Słaba komunikacja — nie wiesz co się dzieje, proces się rozmywa, mijają tygodnie bez efektów.</span>
           </div>
         </div>
       </div>
@@ -356,15 +360,15 @@
         <div class="compare-items">
           <div class="compare-item">
             <span class="icon" style="color: var(--color-gold)">✓</span>
-            <span>Aktywnie docieramy do zdecydowanych kupujących z bazy + współpracujemy z każdym agentem na rynku — Twoje mieszkanie trafia do każdego potencjalnego kupca.</span>
+            <span data-i18n="whyus.us.i1">Aktywnie docieramy do zdecydowanych kupujących z bazy + współpracujemy z każdym agentem na rynku — Twoje mieszkanie trafia do każdego potencjalnego kupca.</span>
           </div>
           <div class="compare-item">
             <span class="icon" style="color: var(--color-gold)">✓</span>
-            <span>Specjalizacja w mieszkaniach 1–3 pokojowych w Warszawie — mamy gotową bazę kupujących pod ten segment i doskonale znamy ceny w każdej dzielnicy.</span>
+            <span data-i18n="whyus.us.i2">Specjalizacja w mieszkaniach 1–3 pokojowych w Warszawie — mamy gotową bazę kupujących pod ten segment i doskonale znamy ceny w każdej dzielnicy.</span>
           </div>
           <div class="compare-item">
             <span class="icon" style="color: var(--color-gold)">✓</span>
-            <span>Pełna transparentność i stały kontakt — wiesz co dzieje się na każdym etapie. Pierwsze realne oferty już po 2–3 tygodniach współpracy.</span>
+            <span data-i18n="whyus.us.i3">Pełna transparentność i stały kontakt — wiesz co dzieje się na każdym etapie. Pierwsze realne oferty już po 2–3 tygodniach współpracy.</span>
           </div>
         </div>
       </div>
@@ -380,9 +384,9 @@
 <section id="results" class="section-cream fade-up">
   <div class="container">
     <div class="text-center" style="margin-bottom: 48px;">
-      <span class="eyebrow" style="color: var(--color-dark-green);">Realne wyniki</span>
-      <h2>Liczby mówią same za siebie.</h2>
-      <p style="margin: 16px auto 0; opacity: 0.65;">
+      <span class="eyebrow" style="color: var(--color-dark-green);" data-i18n="results.eyebrow">Realne wyniki</span>
+      <h2 data-i18n="results.h2">Liczby mówią same za siebie.</h2>
+      <p style="margin: 16px auto 0; opacity: 0.65;" data-i18n="results.p">
         Poniżej konkretne transakcje — bez upiększania, tylko fakty.
       </p>
     </div>
@@ -396,8 +400,8 @@
           <span class="case-arrow">→</span>
           <span class="case-price-after">665 000 zł</span>
         </div>
-        <div class="case-gain">+45 000 zł zysku</div>
-        <div class="case-note">O 7,3% więcej niż pierwotna cena</div>
+        <div class="case-gain">+45 000 zł <span data-i18n="results.gain">zysku</span></div>
+        <div class="case-note" data-i18n="results.c1note">O 7,3% więcej niż pierwotna cena</div>
       </div>
 
       <div class="case-card">
@@ -407,8 +411,8 @@
           <span class="case-arrow">→</span>
           <span class="case-price-after">1 190 000 zł</span>
         </div>
-        <div class="case-gain">+70 000 zł zysku</div>
-        <div class="case-note">O 6,25% więcej niż cena wyjściowa</div>
+        <div class="case-gain">+70 000 zł <span data-i18n="results.gain">zysku</span></div>
+        <div class="case-note" data-i18n="results.c2note">O 6,25% więcej niż cena wyjściowa</div>
       </div>
 
       <div class="case-card">
@@ -418,8 +422,8 @@
           <span class="case-arrow">→</span>
           <span class="case-price-after">440 000 zł</span>
         </div>
-        <div class="case-gain">+30 000 zł zysku</div>
-        <div class="case-note">O 7,3% powyżej oczekiwań klienta</div>
+        <div class="case-gain">+30 000 zł <span data-i18n="results.gain">zysku</span></div>
+        <div class="case-note" data-i18n="results.c3note">O 7,3% powyżej oczekiwań klienta</div>
       </div>
 
       <div class="case-card" style="border-color: var(--color-gold); border-width: 2px;">
@@ -429,8 +433,8 @@
           <span class="case-arrow">→</span>
           <span class="case-price-after">650 000 zł</span>
         </div>
-        <div class="case-gain">+70 000 zł zysku</div>
-        <div class="case-note" style="font-weight: 600; color: var(--color-dark-green);">
+        <div class="case-gain">+70 000 zł <span data-i18n="results.gain">zysku</span></div>
+        <div class="case-note" style="font-weight: 600; color: var(--color-dark-green);" data-i18n="results.c4note">
           ⚡ Sprzedane w 2 tygodnie — pierwszemu klientowi
         </div>
       </div>
@@ -442,19 +446,19 @@
           <span class="case-arrow">→</span>
           <span class="case-price-after">1 640 000 zł</span>
         </div>
-        <div class="case-gain">+110 000 zł zysku</div>
-        <div class="case-note">O 7,2% powyżej ceny ofertowej</div>
+        <div class="case-gain">+110 000 zł <span data-i18n="results.gain">zysku</span></div>
+        <div class="case-note" data-i18n="results.c5note">O 7,2% powyżej ceny ofertowej</div>
       </div>
 
       <div class="case-card" style="background: var(--color-dark-green); color: var(--color-cream);">
-        <div class="case-location" style="color: var(--color-gold); opacity: 0.8;">📍 Sytuacja kryzysowa, Warszawa</div>
-        <div style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: var(--color-gold); margin-bottom: 10px;">
+        <div class="case-location" style="color: var(--color-gold); opacity: 0.8;" data-i18n="results.c6loc">📍 Sytuacja kryzysowa, Warszawa</div>
+        <div style="font-family: var(--font-serif); font-size: 1.2rem; font-weight: 700; color: var(--color-gold); margin-bottom: 10px;" data-i18n="results.c6title">
           Mieszkanie zagrożone licytacją komorniczą
         </div>
-        <div class="case-gain" style="background: rgba(201,168,76,0.2); color: var(--color-gold-light);">
+        <div class="case-gain" style="background: rgba(201,168,76,0.2); color: var(--color-gold-light);" data-i18n="results.c6value">
           Wartość: 1 200 000 zł
         </div>
-        <div class="case-note" style="color: rgba(240,234,214,0.7); font-weight: 600; margin-top: 8px;">
+        <div class="case-note" style="color: rgba(240,234,214,0.7); font-weight: 600; margin-top: 8px;" data-i18n="results.c6note">
           ⚡ Sprzedane w niecały miesiąc — uratowaliśmy sytuację klienta
         </div>
       </div>
@@ -471,16 +475,16 @@
   <div class="container">
     <div class="guarantee-box">
       <div class="guarantee-icon">🏆</div>
-      <span class="eyebrow" style="color: var(--color-gold); opacity: 1; margin-bottom: 12px;">Nasza obietnica</span>
-      <h2>Nikt nie sprzeda Twojej nieruchomości&nbsp;drożej.</h2>
-      <p>
+      <span class="eyebrow" style="color: var(--color-gold); opacity: 1; margin-bottom: 12px;" data-i18n="guarantee.eyebrow">Nasza obietnica</span>
+      <h2 data-i18n="guarantee.h2">Nikt nie sprzeda Twojej nieruchomości&nbsp;drożej.</h2>
+      <p data-i18n-html="guarantee.p">
         Regularnie uzyskujemy dla klientów oferty <strong style="color: var(--color-gold-light);">średnio o 7–11% wyższe</strong>
         niż osiągnęliby samodzielnie. To nie przypadek — to efekt specjalizacji,
         aktywnej pracy i dostępu do każdego kupującego na rynku.
       </p>
       <div style="margin-top: 36px; display: flex; justify-content: center; gap: 16px; flex-wrap: wrap;">
-        <a href="#form-section" class="btn btn-primary">Chcę sprzedać drożej</a>
-        <a href="tel:+48792432203" class="btn btn-outline">Zadzwoń teraz</a>
+        <a href="#form-section" class="btn btn-primary"><span data-i18n="guarantee.btn1">Chcę sprzedać drożej</span></a>
+        <a href="tel:+48792432203" class="btn btn-outline"><span data-i18n="guarantee.btn2">Zadzwoń teraz</span></a>
       </div>
     </div>
   </div>
@@ -496,9 +500,9 @@
 
       <!-- Lewa kolumna — context / hooks -->
       <div class="form-lead-content">
-        <span class="eyebrow" style="color: var(--color-dark-green);">Bezpłatna wycena</span>
-        <h2 style="color: var(--color-dark-green);">Twoja nieruchomość może być warta więcej, niż myślisz.</h2>
-        <p style="color: rgba(15,31,23,0.65);">
+        <span class="eyebrow" style="color: var(--color-dark-green);" data-i18n="form.eyebrow">Bezpłatna wycena</span>
+        <h2 style="color: var(--color-dark-green);" data-i18n="form.h2">Twoja nieruchomość może być warta więcej, niż myślisz.</h2>
+        <p style="color: rgba(15,31,23,0.65);" data-i18n="form.p">
           Zostaw kontakt — oddzwonimy, omówimy Twoją sytuację i podamy realną wartość
           rynkową. Bez zobowiązań, bez presji.
         </p>
@@ -507,29 +511,29 @@
           <div class="form-benefit">
             <div class="fb-icon">📞</div>
             <div class="fb-text">
-              <h4>Szybki kontakt w ciągu 24h</h4>
-              <p>Agent skontaktuje się i omówi Twoje oczekiwania</p>
+              <h4 data-i18n="form.b1h">Szybki kontakt w ciągu 24h</h4>
+              <p data-i18n="form.b1p">Agent skontaktuje się i omówi Twoje oczekiwania</p>
             </div>
           </div>
           <div class="form-benefit">
             <div class="fb-icon">💰</div>
             <div class="fb-text">
-              <h4>Realna wycena, nie "kosmiczne" kwoty</h4>
-              <p>Znamy ceny transakcyjne — nie tylko ofertowe</p>
+              <h4 data-i18n="form.b2h">Realna wycena, nie "kosmiczne" kwoty</h4>
+              <p data-i18n="form.b2p">Znamy ceny transakcyjne — nie tylko ofertowe</p>
             </div>
           </div>
           <div class="form-benefit">
             <div class="fb-icon">🔒</div>
             <div class="fb-text">
-              <h4>Prowizja dopiero po sprzedaży</h4>
-              <p>Nie ryzykujesz niczym — płacisz dopiero gdy dostaniesz pieniądze</p>
+              <h4 data-i18n="form.b3h">Prowizja dopiero po sprzedaży</h4>
+              <p data-i18n="form.b3p">Nie ryzykujesz niczym — płacisz dopiero gdy dostaniesz pieniądze</p>
             </div>
           </div>
           <div class="form-benefit">
             <div class="fb-icon">⚡</div>
             <div class="fb-text">
-              <h4>Pierwsze oferty po 2–3 tygodniach</h4>
-              <p>Aktywnie dotrzemy do zdecydowanych kupujących za Ciebie</p>
+              <h4 data-i18n="form.b4h">Pierwsze oferty po 2–3 tygodniach</h4>
+              <p data-i18n="form.b4p">Aktywnie dotrzemy do zdecydowanych kupujących za Ciebie</p>
             </div>
           </div>
         </div>
@@ -537,25 +541,26 @@
 
       <!-- Prawa kolumna — formularz -->
       <div class="form-card" id="form-card-inner">
-        <h3>Sprawdź wartość swojego mieszkania</h3>
-        <p class="form-sub">Wypełnij poniższy formularz — agent oddzwoni z wyceną</p>
+        <h3 data-i18n="form.card.h3">Sprawdź wartość swojego mieszkania</h3>
+        <p class="form-sub" data-i18n="form.card.sub">Wypełnij poniższy formularz — agent oddzwoni z wyceną</p>
 
         <form id="lead-form" novalidate>
 
           <div class="form-group">
-            <label for="field-name">Imię i nazwisko *</label>
+            <label for="field-name" data-i18n="form.name.label">Imię i nazwisko *</label>
             <input
               type="text"
               id="field-name"
               name="name"
               placeholder="Jan Kowalski"
+              data-i18n-placeholder="form.name.placeholder"
               required
               autocomplete="name"
             />
           </div>
 
           <div class="form-group">
-            <label for="field-phone">Numer telefonu *</label>
+            <label for="field-phone" data-i18n="form.phone.label">Numer telefonu *</label>
             <input
               type="tel"
               id="field-phone"
@@ -568,9 +573,9 @@
 
           <div class="form-row">
             <div class="form-group">
-              <label for="field-district">Dzielnica *</label>
+              <label for="field-district" data-i18n="form.district.label">Dzielnica *</label>
               <select id="field-district" name="district" required>
-                <option value="">Wybierz dzielnicę</option>
+                <option value="" data-i18n="form.district.default">Wybierz dzielnicę</option>
                 <option value="Mokotów">Mokotów</option>
                 <option value="Ursynów">Ursynów</option>
                 <option value="Wilanów">Wilanów</option>
@@ -587,9 +592,9 @@
               </select>
             </div>
             <div class="form-group">
-              <label for="field-rooms">Liczba pokoi</label>
+              <label for="field-rooms" data-i18n="form.rooms.label">Liczba pokoi</label>
               <select id="field-rooms" name="rooms">
-                <option value="">Wybierz</option>
+                <option value="" data-i18n="form.rooms.default">Wybierz</option>
                 <option value="1">1 pokój</option>
                 <option value="2">2 pokoje</option>
                 <option value="3">3 pokoje</option>
@@ -599,19 +604,20 @@
           </div>
 
           <div class="form-group">
-            <label for="field-value">Orientacyjna wartość (opcjonalnie)</label>
+            <label for="field-value" data-i18n="form.value.label">Orientacyjna wartość (opcjonalnie)</label>
             <input
               type="text"
               id="field-value"
               name="value"
               placeholder="np. 750 000 zł"
+              data-i18n-placeholder="form.value.placeholder"
             />
           </div>
 
           <div class="form-group">
             <div class="rodo-check">
               <input type="checkbox" id="field-rodo" name="rodo" required />
-              <label for="field-rodo">
+              <label for="field-rodo" data-i18n-html="form.rodo">
                 Wyrażam zgodę na przetwarzanie moich danych osobowych przez Samuel Sp. z o.o.
                 (Puławska 270/73, 02-819 Warszawa) w celu odpowiedzi na zapytanie i przedstawienia
                 oferty współpracy w zakresie pośrednictwa nieruchomości, zgodnie z
@@ -621,7 +627,7 @@
             </div>
           </div>
 
-          <button type="submit" id="form-submit-btn" class="btn btn-primary form-submit">
+          <button type="submit" id="form-submit-btn" class="btn btn-primary form-submit" data-i18n="form.submit">
             Wyślij — chcę bezpłatną wycenę
           </button>
 
@@ -636,7 +642,7 @@
             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
             </svg>
-            Twoje dane są bezpieczne i nie będą udostępniane osobom trzecim.
+            <span data-i18n="form.privacy">Twoje dane są bezpieczne i nie będą udostępniane osobom trzecim.</span>
           </div>
 
         </form>
@@ -664,8 +670,8 @@
 <section id="reviews" class="section-dark fade-up">
   <div class="container">
     <div class="text-center" style="margin-bottom: 48px;">
-      <span class="eyebrow" style="color: var(--color-gold); opacity: 1;">Opinie klientów</span>
-      <h2 style="color: var(--color-cream);">Co mówią osoby, które nam zaufały.</h2>
+      <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="reviews.eyebrow">Opinie klientów</span>
+      <h2 style="color: var(--color-cream);" data-i18n="reviews.h2">Co mówią osoby, które nam zaufały.</h2>
     </div>
 
     <div class="reviews-grid">
@@ -738,18 +744,18 @@
      ════════════════════════════════════════════════════════════ -->
 <section id="faq" class="section-dark fade-up">
   <div class="container text-center">
-    <span class="eyebrow" style="color: var(--color-gold); opacity: 1;">Często zadawane pytania</span>
-    <h2 style="color: var(--color-cream);">Masz pytania? Odpowiadamy.</h2>
+    <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="faq.eyebrow">Często zadawane pytania</span>
+    <h2 style="color: var(--color-cream);" data-i18n="faq.h2">Masz pytania? Odpowiadamy.</h2>
 
     <div class="faq-list" style="text-align: left;">
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Ile zapłacę za waszą usługę?
+          <span data-i18n="faq.q1">Ile zapłacę za waszą usługę?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a">
-          <p>
+          <p data-i18n="faq.a1">
             Wynagrodzenie pobieramy wyłącznie po faktycznej sprzedaży — dopiero gdy Ty dostaniesz pieniądze.
             Nie ponosisz żadnego ryzyka finansowego: jeśli nie sprzedamy, nie płacisz.
             Prowizja jest ustalana indywidualnie podczas bezpłatnej konsultacji.
@@ -759,11 +765,11 @@
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Jak długo trwa sprzedaż z Flipp&amp;Chill?
+          <span data-i18n="faq.q2">Jak długo trwa sprzedaż z Flipp&amp;Chill?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a">
-          <p>
+          <p data-i18n-html="faq.a2">
             Pierwsze realne oferty od zdecydowanych kupujących pojawiają się już po 2–3 tygodniach od podpisania umowy.
             Pełna transakcja (od umowy do przekazania kluczy) zamyka się zwykle w ciągu 1–2 miesięcy.
             W przypadkach pilnych (<a href="#results" style="color: var(--color-gold-light); text-decoration: underline;">Jadźwingów</a>) finalizowaliśmy sprzedaż w 2 tygodnie.
@@ -773,11 +779,11 @@
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Czy to tylko kolejne "wrzucenie ogłoszenia na portal"?
+          <span data-i18n="faq.q3">Czy to tylko kolejne "wrzucenie ogłoszenia na portal"?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a">
-          <p>
+          <p data-i18n="faq.a3">
             Zdecydowanie nie. Aktywnie docieramy do kupujących z naszej bazy, którzy szukają dokładnie takich mieszkań jak Twoje.
             Jednocześnie kontaktujemy się z każdym agentem na rynku, który ma potencjalnych kupujących pasujących do Twojego profilu.
             W praktyce Twoje mieszkanie trafia do każdego realnie zainteresowanego kupca w Warszawie.
@@ -787,11 +793,11 @@
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          A co jeśli wy też nie sprzedacie? Czy będę związany umową na rok?
+          <span data-i18n="faq.q4">A co jeśli wy też nie sprzedacie? Czy będę związany umową na rok?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a">
-          <p>
+          <p data-i18n="faq.a4">
             Umowa zawierana jest na maksymalnie 3 miesiące z możliwością trzech tygodni wypowiedzenia i jednego przedłużenia.
             Taki horyzont motywuje nas do maksymalnego zaangażowania od pierwszego dnia – wiemy, że mamy ograniczony czas.
           </p>
@@ -800,11 +806,11 @@
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Czy działacie tylko w Warszawie?
+          <span data-i18n="faq.q5">Czy działacie tylko w Warszawie?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a">
-          <p>
+          <p data-i18n="faq.a5">
             Głównie działamy na terenie Warszawy specjalizując się w sprzedaży mieszkań i domów.
             Ale również aktywnie sprzedajemy nieruchomości w bliskich okolicach miasta m.in. domy czy działki inwestycyjne.
           </p>
@@ -813,11 +819,11 @@
 
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false">
-          Czy zarobię tyle, ile obiecujecie — mimo prowizji?
+          <span data-i18n="faq.q6">Czy zarobię tyle, ile obiecujecie — mimo prowizji?</span>
           <span class="faq-icon" aria-hidden="true">+</span>
         </button>
         <div class="faq-a">
-          <p>
+          <p data-i18n="faq.a6">
             Tak. Regularnie uzyskujemy ceny 7–11% wyższe niż właściciel osiągnąłby samodzielnie.
             W praktyce oznacza to, że nawet po odjęciu naszego wynagrodzenia zostajesz na plusie —
             i to często znaczącym. Na konkretnych liczbach porozmawiamy podczas bezpłatnej konsultacji.
@@ -831,29 +837,29 @@
 
 
 <!-- ════════════════════════════════════════════════════════════
-     SEKCJA 10: FINAL CTA
+     SEKCJA 11: FINAL CTA
      ════════════════════════════════════════════════════════════ -->
 <section id="final-cta" class="section-dark fade-up">
   <div class="container">
     <div class="final-cta-inner">
-      <span class="eyebrow" style="color: var(--color-gold); opacity: 1;">Gotowy, żeby sprzedać drożej?</span>
+      <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="finalcta.eyebrow">Gotowy, żeby sprzedać drożej?</span>
       <h2 style="color: var(--color-cream);">
-        Nie sprzedawaj poniżej wartości rynkowej.<br>
-        <em style="font-style: italic; color: var(--color-gold-light);">Skontaktuj się z nami.</em>
+        <span data-i18n="finalcta.h2">Nie sprzedawaj poniżej wartości rynkowej.</span><br>
+        <em style="font-style: italic; color: var(--color-gold-light);" data-i18n="finalcta.h2em">Skontaktuj się z nami.</em>
       </h2>
-      <p>
+      <p data-i18n="finalcta.p">
         Zostaw kontakt lub zadzwoń teraz — przedstawimy Ci konkretny plan działania,
         realną wycenę i pokażemy ile możesz zyskać.
       </p>
       <div class="final-cta-btns">
         <a href="#form-section" class="btn btn-primary" style="font-size: 1rem; padding: 18px 36px;">
-          Bezpłatna wycena online
+          <span data-i18n="finalcta.btn1">Bezpłatna wycena online</span>
         </a>
         <a href="tel:+48792432203" class="btn btn-outline" style="font-size: 1rem; padding: 18px 36px;">
-          📞 Zadzwoń: <strong>792 432 203</strong>
+          📞 <span data-i18n="finalcta.cta2prefix">Zadzwoń: </span><strong>792 432 203</strong>
         </a>
       </div>
-      <p style="margin: 24px auto 0; font-size: 0.8rem; color: rgba(240,234,214,0.35);">
+      <p style="margin: 24px auto 0; font-size: 0.8rem; color: rgba(240,234,214,0.35);" data-i18n="finalcta.tagline">
         Samuel Piwnicki · 8 lat doświadczenia · Prowizja dopiero po sprzedaży
       </p>
     </div>
@@ -874,7 +880,7 @@
           <img src="Logo F&amp;C.png" alt="Flipp&Chill logo" class="logo-svg" aria-hidden="true" />
           <span class="logo-text">Flipp<span>&amp;</span>Chill</span>
         </div>
-        <p>
+        <p data-i18n="footer.p">
           Najskuteczniejsze biuro pośrednictwa nieruchomości w Warszawie.
           Specjalizujemy się w sprzedaży mieszkań.
           Regularnie uzyskujemy oferty 7–11% powyżej ceny rynkowej.
@@ -895,7 +901,7 @@
 
       <!-- Kontakt -->
       <div class="footer-col">
-        <h4>Kontakt</h4>
+        <h4 data-i18n="footer.contact">Kontakt</h4>
         <ul>
           <li><a href="tel:+48792432203"><strong>+48 792 432 203</strong></a></li>
           <li><a href="mailto:kontakt@flippchill.waw.pl">kontakt@flippchill.waw.pl</a></li>
@@ -908,7 +914,7 @@
 
       <!-- Dane spółki -->
       <div class="footer-col">
-        <h4>Dane spółki</h4>
+        <h4 data-i18n="footer.company">Dane spółki</h4>
         <ul>
           <li style="font-size: 0.85rem; opacity: 0.7; line-height: 1.6;">
             Samuel sp. z o.o.
@@ -927,9 +933,9 @@
     </div><!-- /footer-inner -->
 
     <div class="footer-bottom">
-      <span>© 2024 Samuel Sp. z o.o. · Wszelkie prawa zastrzeżone.</span>
+      <span data-i18n="footer.copyright">© 2024 Samuel Sp. z o.o. · Wszelkie prawa zastrzeżone.</span>
       <span style="opacity: 0.5;">
-        <a href="https://flippchill.waw.pl/" target="_blank" rel="noopener noreferrer">Polityka prywatności</a>
+        <a href="https://flippchill.waw.pl/" target="_blank" rel="noopener noreferrer" data-i18n="footer.privacy">Polityka prywatności</a>
       </span>
     </div>
   </div>

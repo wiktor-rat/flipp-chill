@@ -157,6 +157,29 @@ nav {
 
 .nav-cta-group { display: flex; align-items: center; gap: 12px; }
 
+.lang-switcher { display: flex; align-items: center; gap: 2px; }
+.lang-sep { color: rgba(240,234,214,0.25); font-size: 0.75rem; line-height: 1; }
+.lang-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-sans);
+  font-size: 0.78rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: rgba(240,234,214,0.4);
+  padding: 4px 5px;
+  transition: color 0.2s;
+  line-height: 1;
+}
+.lang-btn:hover { color: var(--color-cream); }
+.lang-btn.active {
+  font-weight: 700;
+  color: var(--color-gold);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .nav-phone {
   display: flex;
   align-items: center;
