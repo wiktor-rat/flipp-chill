@@ -3,7 +3,7 @@
    ============================================================ */
 
 /* ── KONFIGURACJA ────────────────────────────────────────── */
-const LEAD_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19282604/42p4kqi/";
+const LEAD_WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/19282604/4utd6ij/";
 
 /* ── TŁUMACZENIA ─────────────────────────────────────────── */
 var currentLang = 'pl';
