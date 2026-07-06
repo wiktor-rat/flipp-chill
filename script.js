@@ -476,7 +476,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         if (window.fbq) fbq('track', 'Lead');
-        if (formCard)    formCard.style.display    = 'none';
+        if (form)        form.style.display        = 'none';
         if (formSuccess) formSuccess.classList.add('visible');
 
       } catch (err) {
