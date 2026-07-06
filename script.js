@@ -467,23 +467,17 @@ document.addEventListener('DOMContentLoaded', function () {
       submitBtn.textContent = translations[currentLang]['form.sending'] || 'Wysyłanie…';
       if (formError) formError.classList.remove('visible');
 
-      try {
-        await fetch(LEAD_WEBHOOK_URL, {
-          method:  'POST',
-          mode:    'no-cors',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body:    new URLSearchParams(data).toString(),
-        });
+      // Send to webhook in background — show success regardless
+      fetch(LEAD_WEBHOOK_URL, {
+        method:  'POST',
+        mode:    'no-cors',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body:    new URLSearchParams(data).toString(),
+      }).catch(function() {});
 
-        if (window.fbq) fbq('track', 'Lead');
-        if (form)        form.style.display        = 'none';
-        if (formSuccess) formSuccess.classList.add('visible');
-
-      } catch (err) {
-        if (formError) formError.classList.add('visible');
-        submitBtn.disabled    = false;
-        submitBtn.textContent = translations[currentLang]['form.retry'] || 'Wyślij zapytanie';
-      }
+      if (window.fbq) fbq('track', 'Lead');
+      if (form)        form.style.display        = 'none';
+      if (formSuccess) formSuccess.classList.add('visible');
     });
   }
 
