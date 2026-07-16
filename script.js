@@ -347,6 +347,17 @@ function setLanguage(lang) {
   }
 
   if (typeof updateCalc === 'function') updateCalc();
+
+  // Re-format value field when language switches
+  var vf = document.getElementById('field-value');
+  if (vf && vf.value) {
+    var digits = vf.value.replace(/\D/g, '');
+    if (digits) {
+      var sep    = lang === 'en' ? ',' : ' ';
+      var suffix = lang === 'en' ? ' PLN' : ' zł';
+      vf.value   = digits.replace(/\B(?=(\d{3})+(?!\d))/g, sep) + suffix;
+    }
+  }
 }
 
 /* ── DOM READY ────────────────────────────────────────────── */
@@ -442,6 +453,24 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
 
+  /* ─ Auto-formatowanie pola wartości ─────────────────────── */
+  var valueInput = document.getElementById('field-value');
+  if (valueInput) {
+    valueInput.addEventListener('input', function() {
+      var digits = this.value.replace(/\D/g, '');
+      if (!digits) { this.value = ''; return; }
+
+      var sep    = currentLang === 'en' ? ',' : ' ';
+      var suffix = currentLang === 'en' ? ' PLN' : ' zł';
+      var formatted = digits.replace(/\B(?=(\d{3})+(?!\d))/g, sep) + suffix;
+
+      this.value = formatted;
+      // Ustaw kursor przed sufiksem
+      var pos = formatted.length - suffix.length;
+      this.setSelectionRange(pos, pos);
+    });
+  }
+
   /* ─ FORMULARZ ────────────────────────────────────────────── */
   var form        = document.getElementById('lead-form');
   var formCard    = document.getElementById('form-card-inner');
@@ -458,12 +487,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return;
       }
 
+      var rawValue = document.getElementById('field-value').value.replace(/\D/g, '');
       var data = {
         name:                   document.getElementById('field-name').value.trim(),
         phone:                  document.getElementById('field-phone').value.trim(),
         district:               document.getElementById('field-district').value,
         rooms:                  document.getElementById('field-rooms').value,
-        value:                  document.getElementById('field-value').value.trim(),
+        property_value:         rawValue,
         preferred_contact_time: document.getElementById('field-contact-time').value,
         language:               currentLang === 'en' ? 'EN' : 'PL',
         source:                 'landing-flippchill',
