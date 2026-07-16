@@ -124,6 +124,7 @@ var translations = {
     'form.privacy': 'Twoje dane są bezpieczne i nie będą udostępniane osobom trzecim.',
     'form.sending': 'Wysyłanie…',
     'form.retry': 'Wyślij zapytanie',
+    'success.call': '+48 792 432 203',
 
     'reviews.eyebrow': 'Opinie klientów',
     'reviews.h2': 'Co mówią osoby, które nam zaufały.',
@@ -275,6 +276,7 @@ var translations = {
     'form.privacy': 'Your data is secure and will not be shared with third parties.',
     'form.sending': 'Sending…',
     'form.retry': 'Send enquiry',
+    'success.call': '+48 792 432 203',
 
     'reviews.eyebrow': 'CLIENT REVIEWS',
     'reviews.h2': 'What people who trusted us say.',
