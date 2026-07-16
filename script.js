@@ -115,6 +115,8 @@ var translations = {
     'form.rooms.label': 'Liczba pokoi',
     'form.rooms.default': 'Wybierz',
     'form.value.label': 'Orientacyjna wartość (opcjonalnie)',
+    'form.time.label': 'Preferowana godzina kontaktu (opcjonalnie)',
+    'form.time.default': 'Wybierz godzinę',
     'form.rodo': 'Wyrażam zgodę na przetwarzanie moich danych osobowych przez Samuel Sp. z o.o. (Puławska 270/73, 02-819 Warszawa) w celu odpowiedzi na zapytanie i przedstawienia oferty współpracy w zakresie pośrednictwa nieruchomości, zgodnie z <a href="https://flippchill.waw.pl/" style="text-decoration: underline; color: var(--color-dark-green);">Polityką Prywatności</a>. Zgoda jest dobrowolna i może być cofnięta w każdym czasie. *',
     'form.name.placeholder': 'Jan Kowalski',
     'form.value.placeholder': 'np. 750 000 zł',
@@ -264,6 +266,8 @@ var translations = {
     'form.rooms.label': 'Number of rooms',
     'form.rooms.default': 'Select',
     'form.value.label': 'Estimated value (optional)',
+    'form.time.label': 'Preferred contact time (optional)',
+    'form.time.default': 'Select time',
     'form.rodo': 'I consent to the processing of my personal data by Samuel Sp. z o.o. (Puláwska 270/73, 02-819 Warsaw) for the purpose of responding to my enquiry and presenting a real estate brokerage offer, in accordance with the <a href="https://flippchill.waw.pl/" style="text-decoration: underline; color: var(--color-dark-green);">Privacy Policy</a>. Consent is voluntary and may be withdrawn at any time. *',
     'form.name.placeholder': 'John Smith',
     'form.value.placeholder': 'e.g. 750,000 PLN',
@@ -453,14 +457,15 @@ document.addEventListener('DOMContentLoaded', function () {
       }
 
       var data = {
-        name:      document.getElementById('field-name').value.trim(),
-        phone:     document.getElementById('field-phone').value.trim(),
-        district:  document.getElementById('field-district').value,
-        rooms:     document.getElementById('field-rooms').value,
-        value:     document.getElementById('field-value').value.trim(),
-        language:  currentLang === 'en' ? 'EN' : 'PL',
-        source:    'landing-flippchill',
-        timestamp: new Date().toISOString(),
+        name:                   document.getElementById('field-name').value.trim(),
+        phone:                  document.getElementById('field-phone').value.trim(),
+        district:               document.getElementById('field-district').value,
+        rooms:                  document.getElementById('field-rooms').value,
+        value:                  document.getElementById('field-value').value.trim(),
+        preferred_contact_time: document.getElementById('field-contact-time').value,
+        language:               currentLang === 'en' ? 'EN' : 'PL',
+        source:                 'landing-flippchill',
+        timestamp:              new Date().toISOString(),
       };
 
       submitBtn.disabled = true;
