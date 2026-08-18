@@ -144,6 +144,11 @@ var translations = {
     'faq.q6': 'Czy zarobię tyle, ile obiecujecie — mimo prowizji?',
     'faq.a6': 'Tak. Regularnie uzyskujemy ceny 7–11% wyższe niż właściciel osiągnąłby samodzielnie. W praktyce oznacza to, że nawet po odjęciu naszego wynagrodzenia zostajesz na plusie — i to często znaczącym. Na konkretnych liczbach porozmawiamy podczas bezpłatnej konsultacji.',
 
+    'oferty.eyebrow': 'Aktualne oferty',
+    'oferty.h2': 'Sprawdź nasze oferty',
+    'oferty.p': 'Przeglądaj mieszkania, które aktualnie mamy w sprzedaży — może jedno z nich jest właśnie dla Ciebie lub kogoś bliskiego.',
+    'oferty.btn': 'Zobacz oferty na flippchill.waw.pl',
+
     'finalcta.eyebrow': 'Gotowy, żeby sprzedać drożej?',
     'finalcta.h2': 'Nie sprzedawaj poniżej wartości rynkowej.',
     'finalcta.h2em': 'Skontaktuj się z nami.',
@@ -295,6 +300,11 @@ var translations = {
     'faq.a5': 'We primarily operate in Warsaw, specialising in the sale of apartments and houses. We also actively sell properties in the surrounding area, including houses and investment plots.',
     'faq.q6': 'Will I actually earn what you promise — even after your commission?',
     'faq.a6': "Yes. We regularly achieve prices 7–11% higher than the owner would achieve on their own. In practice, even after deducting our fee you come out ahead — often significantly. We’ll go through the specific numbers during a free consultation.",
+
+    'oferty.eyebrow': 'CURRENT LISTINGS',
+    'oferty.h2': 'Browse our listings',
+    'oferty.p': 'See the apartments we currently have for sale — perhaps one of them is right for you or someone you know.',
+    'oferty.btn': 'View listings at flippchill.waw.pl',
 
     'finalcta.eyebrow': 'READY TO SELL FOR MORE?',
     'finalcta.h2': "Don’t sell below market value.",
