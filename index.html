@@ -165,7 +165,60 @@
 
 
 <!-- ════════════════════════════════════════════════════════════
-     SEKCJA 2: PROBLEM / AGITACJA
+     SEKCJA 2: KALKULATOR
+     ════════════════════════════════════════════════════════════ -->
+<section id="calculator" class="section-dark fade-up">
+  <div class="container">
+
+    <div class="calculator-card">
+      <div class="calc-header">
+        <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="calc.eyebrow">Kalkulator zysku</span>
+        <h2 data-i18n-html="calc.h2">Ile więcej zyskasz<br>sprzedając z nami?</h2>
+        <p data-i18n="calc.p">Przesuń suwak, żeby zobaczyć ile możesz zyskać przy sprzedaży z Flipp&amp;Chill.</p>
+      </div>
+
+      <div class="calc-input-group">
+        <div class="calc-label">
+          <span data-i18n="calc.label">Orientacyjna wartość Twojego mieszkania</span>
+          <span class="calc-value-display" id="calc-value-display">500 000 zł</span>
+        </div>
+        <input
+          type="range"
+          id="calc-slider"
+          min="200"
+          max="3000"
+          step="10"
+          value="500"
+          aria-label="Wartość nieruchomości w tysiącach złotych"
+        />
+        <div class="calc-range-labels">
+          <span>200 000 zł</span>
+          <span>3 000 000 zł</span>
+        </div>
+      </div>
+
+      <div class="calc-result visible" id="calc-result" role="status" aria-live="polite">
+        <div class="calc-result-label" data-i18n="calc.result.label">Z Flipp&amp;Chill możesz uzyskać dodatkowo</div>
+        <div class="calc-result-range" id="calc-result-range">od 35 000 zł do 55 000 zł</div>
+        <div class="calc-result-note" data-i18n="calc.result.note">Szacunek oparty na realnych wynikach naszych transakcji (+7–11%)</div>
+      </div>
+
+      <div class="calc-cta">
+        <p style="color: rgba(240,234,214,0.65); font-size: 0.9rem; margin: 0 auto 20px; text-align: center;" data-i18n="calc.cta.p">
+          Chcesz potwierdzić tę kwotę z agentem i ustalić plan działania?
+        </p>
+        <button id="calc-cta-btn" class="btn btn-primary" style="margin: 0 auto; display: flex;">
+          <span data-i18n="calc.cta.btn">Sprawdź to z agentem →</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════════════════════════
+     SEKCJA 3: PROBLEM / AGITACJA
      ════════════════════════════════════════════════════════════ -->
 <section id="problem" class="section-cream fade-up">
   <div class="container">
@@ -219,59 +272,6 @@
       </div>
 
     </div>
-  </div>
-</section>
-
-
-<!-- ════════════════════════════════════════════════════════════
-     SEKCJA 3: KALKULATOR
-     ════════════════════════════════════════════════════════════ -->
-<section id="calculator" class="section-dark fade-up">
-  <div class="container">
-
-    <div class="calculator-card">
-      <div class="calc-header">
-        <span class="eyebrow" style="color: var(--color-gold); opacity: 1;" data-i18n="calc.eyebrow">Kalkulator zysku</span>
-        <h2 data-i18n-html="calc.h2">Ile więcej zyskasz<br>sprzedając z nami?</h2>
-        <p data-i18n="calc.p">Przesuń suwak, żeby zobaczyć ile możesz zyskać przy sprzedaży z Flipp&amp;Chill.</p>
-      </div>
-
-      <div class="calc-input-group">
-        <div class="calc-label">
-          <span data-i18n="calc.label">Orientacyjna wartość Twojego mieszkania</span>
-          <span class="calc-value-display" id="calc-value-display">500 000 zł</span>
-        </div>
-        <input
-          type="range"
-          id="calc-slider"
-          min="200"
-          max="3000"
-          step="10"
-          value="500"
-          aria-label="Wartość nieruchomości w tysiącach złotych"
-        />
-        <div class="calc-range-labels">
-          <span>200 000 zł</span>
-          <span>3 000 000 zł</span>
-        </div>
-      </div>
-
-      <div class="calc-result visible" id="calc-result" role="status" aria-live="polite">
-        <div class="calc-result-label" data-i18n="calc.result.label">Z Flipp&amp;Chill możesz uzyskać dodatkowo</div>
-        <div class="calc-result-range" id="calc-result-range">od 35 000 zł do 55 000 zł</div>
-        <div class="calc-result-note" data-i18n="calc.result.note">Szacunek oparty na realnych wynikach naszych transakcji (+7–11%)</div>
-      </div>
-
-      <div class="calc-cta">
-        <p style="color: rgba(240,234,214,0.65); font-size: 0.9rem; margin: 0 auto 20px; text-align: center;" data-i18n="calc.cta.p">
-          Chcesz potwierdzić tę kwotę z agentem i ustalić plan działania?
-        </p>
-        <button id="calc-cta-btn" class="btn btn-primary" style="margin: 0 auto; display: flex;">
-          <span data-i18n="calc.cta.btn">Sprawdź to z agentem →</span>
-        </button>
-      </div>
-    </div>
-
   </div>
 </section>
 
